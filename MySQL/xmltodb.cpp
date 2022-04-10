@@ -342,7 +342,7 @@ bool xmltobakerr(char *fullfilename,char *srcpath,char *dstpath)
   char dstfilename[301];   // 目标文件名。
   STRCPY(dstfilename,sizeof(dstfilename),fullfilename);
 
-  UpdateStr(dstfilename,srcpath,dstpath,false);    // 小心第四个参数，一定要填false。
+  UpdateStr(dstfilename,srcpath,dstpath,false);   // 小心第四个参数，一定要填false。
 
   if (RENAME(fullfilename,dstfilename)==false)
   {
